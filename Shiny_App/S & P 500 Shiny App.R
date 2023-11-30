@@ -77,6 +77,7 @@ ui <- dashboardPage(
                 `aria-expanded` = "false",
                 "Dropdown"
               ),
+              style = "margin-right: 50px;",
               tags$ul(
                 class = "dropdown-menu",
                 tags$li(tags$a(class = "dropdown-item", href = "#", "Action")),
