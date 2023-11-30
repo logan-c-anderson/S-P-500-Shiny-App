@@ -47,14 +47,18 @@ library(shiny)
 library(shinydashboard)
 
 ui <- dashboardPage(
-  dashboardHeader(),
-  dashboardSidebar(),
-  dashboardBody(
+  dashboardHeader(),   #define dashboard header
+  dashboardSidebar(),  #define dashboard side bar
+  dashboardBody(       #define dashboard body
     tags$nav(
       class = "navbar navbar-expand-lg bg-body-tertiary",
       tags$div(
         class = "container-fluid",
-        tags$a(class = "navbar-brand", href = "#", "Navbar"),
+        tags$a(class = "navbar-brand", 
+               href = "https://www.spglobal.com/spdji/en/indices/equity/sp-500/#overview", 
+               tags$img(src = "https://easyportfol.io/blog/spx/thumb.svg", 
+                        alt = "Brand Logo",
+                        style = "vertical-align: top; width: 105px;")),
         actionButton(
           class = "navbar-toggler",
           "Toggle navigation",
@@ -65,8 +69,16 @@ ui <- dashboardPage(
           id = "navbarSupportedContent",
           tags$ul(
             class = "navbar-nav me-auto mb-2 mb-lg-0",
-            tags$li(class = "nav-item", tags$a(class = "nav-link active", `aria-current` = "page", href = "#", "Home")),
-            tags$li(class = "nav-item", tags$a(class = "nav-link", href = "https://www.spglobal.com/spdji/en/indices/equity/sp-500/#overview", "S$P 500 Live")),
+            tags$li(class = "nav-item", 
+                    tags$a(class = "nav-link active", `aria-current` = "page", href = "#", "Home"),
+                    style = "margin-right: 30px;",
+                    ),
+            tags$li(class = "nav-item", 
+                    tags$a(class = "nav-link", 
+                           href = "https://www.cnbc.com/quotes/.SPX", 
+                           "S&P 500 Live Updates"),
+                    style = "margin-right: 30px;",
+                    ),
             tags$li(
               class = "nav-item dropdown",
               tags$a(
@@ -77,7 +89,7 @@ ui <- dashboardPage(
                 `aria-expanded` = "false",
                 "Dropdown"
               ),
-              style = "margin-right: 50px;",
+              style = "margin-right: 30px;",
               tags$ul(
                 class = "dropdown-menu",
                 tags$li(tags$a(class = "dropdown-item", href = "#", "Action")),
