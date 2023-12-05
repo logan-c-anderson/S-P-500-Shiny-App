@@ -89,13 +89,13 @@ ui <- dashboardPage(
               h3("Logan's Get Rich Quick Dashboard Home Page"),
               p("🎉 Welcome to Logan's Get Rich Quick Dashboard: Where Fortunes Begin! 🚀"),
               p("Are you ready to turn stock market chaos into cash flow? Well, you came to the right place!
-               While I may have little-to-none stock market experience and knowledge, be assured that I can confidently pretend to. 
-               No I may have not mastered the art of transforming financial jargon into your own personal goldmine - I think you will 
+               While I may have little-to-no stock market experience and knowledge, be assured that I can confidently pretend to. 
+               No, I may have not mastered the art of transforming financial jargon into your own personal goldmine - I think you will 
                still find this Shiny App kinda cool. So, whether you're a seasoned investor or just dipped your toes into the S&P 500 waters, 
                you've just stumbled upon the secret sauce to financial success. ***DISCLAIMER*** YOU HAVE NOT JUST STUMBLED UPON THE SECRET SAUCE 
                TO FINANICAL SUCCESS
                "), p("🔮 Why Logan's Get Rich Quick Dashboard? Because you're broke, need cash quick, and this was an assignment! 
-               Everybody knows the stock makret is wildy unpredictable, so how can you tell the future of it?
+               Everybody knows the stock market is wildly unpredictable, so how can you tell the future of it?
                Sure, crystal balls are fun, but I prefer cold, hard data. Dive into this state-of-the-art analysis tool, 
                and you'll be making investment decisions that'll have your friends wondering if you've got a direct line to Warren Buffett.📈"),
               p("No PhD in finance? No problem! This user-friendly interface takes you from stock market rookie to Wall Street wizard in just 
@@ -110,7 +110,7 @@ ui <- dashboardPage(
       tabItem(
         tabName = "tab2",
         h3("S&P 500 Dashboard Data Dictionary"),
-        p("These variables will be used throught the analysis. Feel free to refrernce back to this page as often as possible."),
+        p("These variables will be used throughout the analysis. Feel free to reference back to this page as often as possible."),
         tabsetPanel(
           tabPanel(
             fluidPage(gt_output("table_plot"))
