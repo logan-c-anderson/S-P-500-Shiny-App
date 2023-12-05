@@ -4,7 +4,7 @@
 # format: Shiny App
 # ---
 
-# Deployed at 
+# Deployed at https://lcanderson.shinyapps.io/S-P-500_Dashboard/
 # Source code at GitHub: https://github.com/logan-c-anderson/S-P-500-Shiny-App/tree/main
 
 
@@ -190,12 +190,12 @@ server <- function(input, output) {
         "Stock symbol that uniquely identifies the company's stock on the stock exchange.",
         "The name or description of the financial security (stock) being traded.",
         "The highest stock price the company reached in the last 52 weeks.",
-        "Lowest sell value in the last 52 weeks",
-        "Percent change in price from the start of the year",
-        "The total amount of shares a company has. The higher is usually more stable",
-        "Measure of volatility",
-        "Earnings Per Share",
-        "Price to Earnings Ratio"
+        "The percentage difference between the current stock price and the 52-week low.",
+        "Percent change in price from the start of the year.",
+        "Market capitalization of the company in billions.",
+        "Measure of volatility. It indicates the stock's sensitivity to market movements.",
+        "Earnings Per Share.",
+        "Price to Earnings Ratio."
       )
     ) %>%
       gt() %>%
@@ -262,7 +262,7 @@ server <- function(input, output) {
     } 
     else if (input$CapSize == "Quit Showing Me Data") {
       # Display something that's not data
-      img(src = "https://media3.giphy.com/media/3o6gDSdED1B5wjC2Gc/giphy.gif", width = "100%", height = "100%")
+      img(src = "https://media3.giphy.com/media/3o6gDSdED1B5wjC2Gc/giphy.gif")
     } 
   })
 

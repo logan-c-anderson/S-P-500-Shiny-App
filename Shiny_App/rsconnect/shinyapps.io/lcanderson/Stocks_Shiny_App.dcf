@@ -1,0 +1,13 @@
+name: Stocks_Shiny_App
+title: Stocks_Shiny_App
+username: lcanderson
+account: lcanderson
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10683729
+bundleId: 7991816
+url: https://lcanderson.shinyapps.io/Stocks_Shiny_App/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: SP500_stocks.xlsx

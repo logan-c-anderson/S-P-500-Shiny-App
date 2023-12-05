@@ -1,0 +1,12 @@
+name: S-P-500_Dashboard
+title: S-P-500_Dashboard
+username: lcanderson
+account: lcanderson
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10683858
+bundleId: 7992463
+url: https://lcanderson.shinyapps.io/S-P-500_Dashboard/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
